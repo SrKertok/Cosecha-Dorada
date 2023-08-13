@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;   
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font: size 2.7em;}
+h3{font: size 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em}
+
+.boton-transparente {
+font-size: 1.2em;
+font-weight: bold;
+padding: 10px 40px;
+border-radius: 4px;
+box-shadow: 1.4px 1.4px 1.5px rgba(0, 0, 0, 0.5);
+color: white;
+background-color: transparent;
+}
+
+button{
+
+font-size: 1.2em;
+font-weight: bold;
+padding: 10px 30px;
+border-radius: 10px;
+box-shadow: 1.4px 1.4px 1.5px rgba(0, 0, 0, 0.5);
+color: white;
+background-color: transparent;
+}
+
+button:hover{
+background-color: rgb(11, 217, 55);
+color: white;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{
+    color: rgb(2, 153, 35);
+}
+.acento2{
+    color:white;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+margin: 0;
+padding: 25px 30px;
+font-weight: bold;
+color: rgb(2, 153, 35);
+font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column
+    text-align: center
+    padding-buttom: center
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+header a:hover{
+    color: rgb(2, 153, 35)
+}
+#home{
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/vino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#home2 .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#home3{
+    background-color: rgb(45, 45, 45);
+    color: white !important;
+    text-align: center;
+}
+#home3 h3{
+    font-size: 1.9em;
+}
+#home3 h2{
+    margin-top: 0px;
+    font-size: 3.5em;
+}
+#home3 .container{
+    padding: 100px 0px;
+}
+#home3 .p{
+    display: none;
+}
+#home3 .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 19px;
+    border-radius: 8px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/maquina.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(/img/bodega.jpg)
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(/img/campos.jpg)
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/empleado.jpg)
+}
+#home4 .container{
+    text-align: center;
+    padding: 200px 12px;
+    height: 90;
+}
+#home4 li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+#home5 a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+#home5 a:hover{
+    color: rgb(2, 153, 35)
+}
+#home5{
+    color: rgb(2, 153, 35);
+}
+footer {
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.45em;
+    color:rgb(2, 153, 35);
+}
+footer h3 {
+    font-size: 1.38em;
+}
+
+.redes-sociales img {
+    width: 57px !important;
+    height: auto !important;
+    padding: 10px;
+}
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #home{
+        font-size: 1.6em;
+    }
+    #home2 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #home2 .texto{
+        font-size: 1.2em;
+        text-align: initial;
+        padding-left: 30px;
+        width: 40%;
+        max-width: 500px;
+    }
+    #home2 .img-vinos1{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(/img/vinol.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #home2 h2{
+        margin-top: 0px;
+    }
+    #home3 .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #home3 p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #home3 .carta{
+        padding: 50px;
+    }
+    #home3 .h3{
+        margin-top: 0;
+    }
+    #home4{
+        background-image: url(/img/imagen-3.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 350px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+    #home4 .container{
+        text-align: initial;
+    }
+    
+}
+
+@media (min-width: 1100px){
+    #home4{
+        background-position-x: calc(100vw - 700px) ;
+    }
+}
+
+
+
